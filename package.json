@@ -1,6 +1,8 @@
 {
   "name": "@qasirdev/common-package",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "author": "Qasir Mehmood",
+  "license": "MIT",
   "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
