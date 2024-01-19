@@ -1,6 +1,6 @@
 {
   "name": "@qasirdev/common-package",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Qasir Mehmood",
   "license": "MIT",
   "private": true,
@@ -15,8 +15,9 @@
   },
   "scripts": {
     "dev": "next dev",
-    "clean": "rm -rf dist",
-    "build": "npm run clean && webpack --mode production",
+    "i": "npm i",
+    "clean": "rm -rf ./dist ./node_modules/ ./package-lock.json",
+    "build": "npm run clean && npm run i && webpack --mode production",
     "start": "next start",
     "lint": "next lint"
   },
@@ -40,6 +41,7 @@
     "style-loader": "^3.3.3",
     "tailwindcss": "^3.3.0",
     "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
